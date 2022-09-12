@@ -1,0 +1,9 @@
+.row{
+
+   @include header($fx:flex,$cn:space-around, $colm:null,$at:none);
+   display: flex;
+   padding: 1rem 3rem;
+}
+.col-8 p{
+   max-width:760px
+}

@@ -1,0 +1,56 @@
+@mixin header(
+   $fx,
+   $cn,
+   $colm,
+   $at
+
+){
+   display: $fx;
+   justify-content: $cn;
+   align-items: $cn;
+   padding-top: $at;
+   flex-direction: $colm;
+
+}
+
+
+@mixin nav(
+   $mb,
+   $space-bet,
+   $FX,
+   $pd
+
+){
+   margin: $mb;
+   padding: $pd;
+   display: $FX;
+   justify-content: $space-bet;
+
+}
+
+
+@mixin nav-li(
+   $mg,
+   
+
+){
+   margin: $mg;
+  
+
+}
+
+
+@mixin blockquote($fst, $fw, $size, $ml, $pl, $bl, $br){
+font-weight: $fw;
+font-style: $fst;
+margin-left: $ml;
+padding-left: $pl;
+border-left: $bl;
+border-radius: $br;
+font-size:$size;
+
+
+}
+
+
+

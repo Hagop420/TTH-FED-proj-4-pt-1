@@ -1,0 +1,44 @@
+$clr-1:blue;
+$BLK:#000;
+$clr-2:rgb(148, 204, 142);
+$clr-3:rgba(201, 28, 245, 0.078);
+$clr-4:rgba(229, 151, 195, 0.078);
+$clr-5:yellow;
+
+
+// PLAIN WHITE
+
+$clr-wh:#fff;
+
+$h1-grn:#18ffc9;
+
+// ERROR'S COLOR'S HERE
+
+$clr-err:red;
+$clr-warn:orange;
+
+
+// DARKEN ERROR COLORS
+
+$clr-err-dark:darken($clr-err, 8%);
+$clr-warn-dark:darken($clr-warn, 7%);
+
+
+
+
+// LIGHT COLOR'S 
+
+
+$clr-err-light:lighten($clr-err, 4%);
+$clr-warn-light:lighten($clr-warn, 7%);
+
+
+
+// MEDIA QUERIE'S breakpoint var
+
+$M-W:768px;
+
+
+// all A link underlines gone
+
+$gone-gone:none;

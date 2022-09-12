@@ -1,0 +1,65 @@
+
+[class$=l-12]{
+.btn {
+   margin-top: 15px;
+   width: 100%;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   padding: 10px 0;
+   transition:background .9s, font-weight .9s;
+   text-transform: uppercase;
+   border-radius: 5px;
+}
+
+ .default {
+   background: #51ddfc;
+
+      &:hover{
+         background:$h1-grn;
+         font-weight: bold;
+      }
+ }
+ 
+ .error {
+   background: #e4757a;
+
+   &:hover{
+      background:$clr-err-dark;
+      font-weight: bold;
+
+   }
+ }
+ 
+ .info {
+   background: #927bc1;
+
+   &:hover{
+      font-weight: bold;
+
+      background:lightseagreen
+   }
+ }
+ 
+ .success {
+   background: #63cc82;
+
+   &:hover{
+      font-weight: bold;
+
+      background:#05ff50
+   }
+ }
+ 
+ .warning {
+   background-color: #fd7856;
+
+   &:hover{
+      font-weight: bold;
+
+      background:$clr-warn-dark
+   }
+  
+ }
+
+}
