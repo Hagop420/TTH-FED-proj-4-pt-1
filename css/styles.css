@@ -320,120 +320,6 @@ template {
   max-width: 760px;
 }
 
-@media (max-width: 768px) {
-  header.row {
-    flex-direction: column;
-    display: block;
-    justify-content: space-around;
-    align-items: space-around;
-    padding-top: 20px;
-  }
-  header.row .img-logo {
-    margin: auto;
-    display: block;
-  }
-  header.row .nav {
-    padding-left: 0;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  header.row .nav-link {
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  }
-  header.row .nav-link:hover {
-    color: #fff;
-    background-color: #58e1c1;
-  }
-}
-@media (min-width: 768px) {
-  header.row {
-    flex-direction: row;
-  }
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .row {
-    flex-direction: row;
-  }
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-  .col-3 {
-    flex-basis: 25%;
-  }
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-  .col-6 {
-    flex-basis: 50%;
-  }
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-  .col-9 {
-    flex-basis: 75%;
-  }
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-  .col-12 {
-    flex-basis: 100%;
-  }
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .nav-link {
-    flex-basis: 100px;
-  }
-  .btn {
-    padding: 10px 30px;
-  }
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
 html * {
   font-family: "Lato", sans-serif;
   color: #777;
@@ -663,6 +549,82 @@ div[class^=col] {
     margin-right: initial;
   }
 }
+@media (max-width: 768px) {
+  header.row {
+    flex-direction: column;
+    display: block;
+    justify-content: space-around;
+    align-items: space-around;
+    padding-top: 20px;
+  }
+  .img-logo {
+    margin: auto;
+    display: block;
+  }
+  .nav {
+    padding-left: 0;
+    flex-basis: 100%;
+    display: block;
+    margin: auto;
+    flex-direction: column;
+  }
+  .nav-link {
+    text-align: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #fff;
+    background-color: #58e1c1;
+  }
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    padding: 1em 10px;
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  header.row {
+    flex-direction: row;
+  }
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    flex-direction: row;
+  }
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  [class^=col] {
+    width: 100% !important;
+  }
+}
 [class$=l-12] .btn {
   margin-top: 15px;
   width: 100%;
@@ -710,6 +672,17 @@ div[class^=col] {
   background: #db8e00;
 }
 
+button[type=submit] {
+  background: #51ddfc;
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
 .form {
   flex-basis: 100%;
 }
@@ -728,6 +701,15 @@ div[class^=col] {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+.form .btn .default {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .nav {
